@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		848AB5861E654DE000E9B5C4 /* WASDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 848AB5851E654DE000E9B5C4 /* WASDBManager.m */; };
+		848AB5891E654FF000E9B5C4 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 848AB5881E654FF000E9B5C4 /* libsqlite3.0.tbd */; };
+		848AB58B1E654FF500E9B5C4 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 848AB58A1E654FF500E9B5C4 /* libsqlite3.tbd */; };
+		848AB58E1E6562F600E9B5C4 /* UIButton+WASMidTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 848AB58D1E6562F600E9B5C4 /* UIButton+WASMidTitle.m */; };
+		84D7B7AC1E6133D700EE5E60 /* WASProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D7B7AB1E6133D700EE5E60 /* WASProgressView.m */; };
+		84D7B7AF1E61577400EE5E60 /* WASTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D7B7AE1E61577400EE5E60 /* WASTableViewCell.m */; };
 		84DC4D461E5FE5CC000AB102 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DC4D451E5FE5CC000AB102 /* main.m */; };
 		84DC4D491E5FE5CC000AB102 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DC4D481E5FE5CC000AB102 /* AppDelegate.m */; };
 		84DC4D4C1E5FE5CC000AB102 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DC4D4B1E5FE5CC000AB102 /* ViewController.m */; };
@@ -17,6 +23,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		848AB5841E654DE000E9B5C4 /* WASDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WASDBManager.h; sourceTree = "<group>"; };
+		848AB5851E654DE000E9B5C4 /* WASDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WASDBManager.m; sourceTree = "<group>"; };
+		848AB5881E654FF000E9B5C4 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		848AB58A1E654FF500E9B5C4 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		848AB58C1E6562F600E9B5C4 /* UIButton+WASMidTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+WASMidTitle.h"; path = "../UIButton+WASMidTitle.h"; sourceTree = "<group>"; };
+		848AB58D1E6562F600E9B5C4 /* UIButton+WASMidTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WASMidTitle.m"; path = "../UIButton+WASMidTitle.m"; sourceTree = "<group>"; };
+		84D7B7AA1E6133D700EE5E60 /* WASProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WASProgressView.h; sourceTree = "<group>"; };
+		84D7B7AB1E6133D700EE5E60 /* WASProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WASProgressView.m; sourceTree = "<group>"; };
+		84D7B7AD1E61577400EE5E60 /* WASTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WASTableViewCell.h; sourceTree = "<group>"; };
+		84D7B7AE1E61577400EE5E60 /* WASTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WASTableViewCell.m; sourceTree = "<group>"; };
 		84DC4D411E5FE5CC000AB102 /* WASKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WASKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84DC4D451E5FE5CC000AB102 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84DC4D471E5FE5CC000AB102 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -36,17 +52,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848AB58B1E654FF500E9B5C4 /* libsqlite3.tbd in Frameworks */,
+				848AB5891E654FF000E9B5C4 /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		848AB5871E654FF000E9B5C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				848AB58A1E654FF500E9B5C4 /* libsqlite3.tbd */,
+				848AB5881E654FF000E9B5C4 /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		84DC4D381E5FE5CC000AB102 = {
 			isa = PBXGroup;
 			children = (
 				84DC4D431E5FE5CC000AB102 /* WASKit */,
 				84DC4D421E5FE5CC000AB102 /* Products */,
+				848AB5871E654FF000E9B5C4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +89,8 @@
 		84DC4D431E5FE5CC000AB102 /* WASKit */ = {
 			isa = PBXGroup;
 			children = (
+				84D7B7AA1E6133D700EE5E60 /* WASProgressView.h */,
+				84D7B7AB1E6133D700EE5E60 /* WASProgressView.m */,
 				84DC4D5B1E5FE628000AB102 /* Base */,
 				84DC4D5C1E5FE628000AB102 /* Category */,
 				84DC4D471E5FE5CC000AB102 /* AppDelegate.h */,
@@ -72,6 +102,12 @@
 				84DC4D521E5FE5CC000AB102 /* LaunchScreen.storyboard */,
 				84DC4D551E5FE5CC000AB102 /* Info.plist */,
 				84DC4D441E5FE5CC000AB102 /* Supporting Files */,
+				84D7B7AD1E61577400EE5E60 /* WASTableViewCell.h */,
+				84D7B7AE1E61577400EE5E60 /* WASTableViewCell.m */,
+				848AB5841E654DE000E9B5C4 /* WASDBManager.h */,
+				848AB5851E654DE000E9B5C4 /* WASDBManager.m */,
+				848AB58C1E6562F600E9B5C4 /* UIButton+WASMidTitle.h */,
+				848AB58D1E6562F600E9B5C4 /* UIButton+WASMidTitle.m */,
 			);
 			path = WASKit;
 			sourceTree = "<group>";
@@ -132,6 +168,7 @@
 				TargetAttributes = {
 					84DC4D401E5FE5CC000AB102 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = XYGY6W2D2B;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -173,9 +210,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				84DC4D5F1E5FE64D000AB102 /* WASBaseModel.m in Sources */,
+				848AB5861E654DE000E9B5C4 /* WASDBManager.m in Sources */,
 				84DC4D4C1E5FE5CC000AB102 /* ViewController.m in Sources */,
 				84DC4D491E5FE5CC000AB102 /* AppDelegate.m in Sources */,
+				84D7B7AC1E6133D700EE5E60 /* WASProgressView.m in Sources */,
+				848AB58E1E6562F600E9B5C4 /* UIButton+WASMidTitle.m in Sources */,
 				84DC4D461E5FE5CC000AB102 /* main.m in Sources */,
+				84D7B7AF1E61577400EE5E60 /* WASTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +334,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XYGY6W2D2B;
 				INFOPLIST_FILE = WASKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = andysection.WASKit;
@@ -304,6 +346,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XYGY6W2D2B;
 				INFOPLIST_FILE = WASKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = andysection.WASKit;
@@ -330,6 +373,7 @@
 				84DC4D5A1E5FE5CC000AB102 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
