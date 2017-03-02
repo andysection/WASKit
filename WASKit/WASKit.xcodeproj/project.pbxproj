@@ -20,6 +20,7 @@
 		84DC4D511E5FE5CC000AB102 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84DC4D501E5FE5CC000AB102 /* Assets.xcassets */; };
 		84DC4D541E5FE5CC000AB102 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DC4D521E5FE5CC000AB102 /* LaunchScreen.storyboard */; };
 		84DC4D5F1E5FE64D000AB102 /* WASBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DC4D5E1E5FE64D000AB102 /* WASBaseModel.m */; };
+		84F53AB31E681FE6007A7401 /* Microsoft Yahei.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84F53AB21E681FE6007A7401 /* Microsoft Yahei.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		84DC4D551E5FE5CC000AB102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84DC4D5D1E5FE64D000AB102 /* WASBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WASBaseModel.h; sourceTree = "<group>"; };
 		84DC4D5E1E5FE64D000AB102 /* WASBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WASBaseModel.m; sourceTree = "<group>"; };
+		84F53AB21E681FE6007A7401 /* Microsoft Yahei.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Microsoft Yahei.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				84DC4D481E5FE5CC000AB102 /* AppDelegate.m */,
 				84DC4D4A1E5FE5CC000AB102 /* ViewController.h */,
 				84DC4D4B1E5FE5CC000AB102 /* ViewController.m */,
+				84F53AB21E681FE6007A7401 /* Microsoft Yahei.ttf */,
 				84DC4D4D1E5FE5CC000AB102 /* Main.storyboard */,
 				84DC4D501E5FE5CC000AB102 /* Assets.xcassets */,
 				84DC4D521E5FE5CC000AB102 /* LaunchScreen.storyboard */,
@@ -197,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84DC4D541E5FE5CC000AB102 /* LaunchScreen.storyboard in Resources */,
+				84F53AB31E681FE6007A7401 /* Microsoft Yahei.ttf in Resources */,
 				84DC4D511E5FE5CC000AB102 /* Assets.xcassets in Resources */,
 				84DC4D4F1E5FE5CC000AB102 /* Main.storyboard in Resources */,
 			);
