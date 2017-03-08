@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "WASProgressView.h"
 #import "WASTableViewCell.h"
+#import <objc/runtime.h>
 
 static NSString *tableViewCellId = @"tableViewCellId";
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
@@ -41,6 +42,25 @@ static NSString *tableViewCellId = @"tableViewCellId";
 
     NSDictionary *dict = @{@"key1":@"v2"};
     NSLog(@"%@, length:%zd",dict[@"key2"], dict[@"key2"]);
+    
+    UIButton *btn  = [UIButton buttonWithType:UIButtonTypeContactAdd];
+    NSLog(@"%@\n", [btn isMemberOfClass:[UIButton class]] ? @"true":@"false");
+    NSLog(@"%@\n", [btn isKindOfClass:[UIButton class]] ? @"true":@"false");
+    NSLog(@"system info:%@\n\n",[[UIDevice currentDevice] systemVersion]);
+    
+    
+    unsigned int ivarCount;
+    Ivar *ivars = class_copyIvarList([UITextView class], &ivarCount);
+    for (int i = 0; i < ivarCount; i++) {
+        Ivar ivar = ivars[i];
+        const char *ivarName = ivar_getName(ivar);
+        NSString *key = [NSString stringWithCString:ivarName encoding:NSUTF8StringEncoding];
+        NSLog(@"%@",key);
+    }
+    free(ivars);
+    
+    UITextView *t = [[UITextView alloc] init];
+    
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
